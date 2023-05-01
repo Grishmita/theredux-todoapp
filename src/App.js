@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Todos from './components/Todos';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+  <marquee style={{backgroundColor: '#fff', padding :'7px'}}>REDUX TODO APP</marquee>
+    <div className="App w-6/12 my-24 mx-auto max-md:w-9/12 my-16 max-sm:w-11/12 my-10">
+      <Todos />
     </div>
+  </>
   );
 }
 
